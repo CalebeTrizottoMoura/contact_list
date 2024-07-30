@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-color: rgb(190, 211, 211);
+    margin: 18px 0 0 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-title {
+    color: #385555;
+}
+.list {
+    max-width: 80%;
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    list-style-type: none;
+    padding: 0;
+    margin: 16px auto 32px auto;
+}
+.list-item {
+    flex-basis: 280px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
+.list-item.a {
+    background-image: url(../images/thumb02.jpg);
+}
+.list-item.b {
+    background-image: url(../images/thumb01.jpg);
+}
+.list-item.c {
+    background-image: url(../images/thumb03.jpg);
+}
+.list-item.d {
+    background-image: url(../images/thumb04.jpg);
+}
+.list-item.e {
+    background-image: url(../images/thumb05.jpg);
+}
+.list-item.f {
+    background-image: url(../images/thumb06.jpg);
+}
+.list-item:hover {
+    transform: scale(1.1);
+}
+.list-item__imagem img {
+    border-radius: 50%;
+    width: 80px;
+    margin-top: 120px;
+}
+.list-item__name {
+    margin: 0;
+    font-size: 24px;
+    color: #385555;
+}
+.list-item__action {
+    display: flex;
+    background-color: #e5e5e5;
+    padding: 16px;
+    justify-content: space-evenly;
+    border-radius: 0 0 10px 10px;
+}
+.list-item__name {
+    font-size: 18px;
+    color: #152525;
+}
+.list-item__email {
+    font-size: 12px;
+    color: #385555;
+}
